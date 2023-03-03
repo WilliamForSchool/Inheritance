@@ -11,3 +11,14 @@ Point <-- Circle
 
 ## Polymorphism 
 * runtime ability for Java to take many Object types and change them to their correct types at runtime
+
+
+```mermaid
+graph TD;
+Skeleton --> Enemy;
+Zombie --> Enemy;
+GreaterZombie --> Zombie;
+DarkSkeleton --> Skeleton;
+
+
+```
