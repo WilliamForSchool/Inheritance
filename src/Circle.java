@@ -1,5 +1,5 @@
 public class Circle extends Point {
-    private int radius;
+    protected int radius;
 
     public Circle(int x, int y, int radius) {
         super(x, y);
@@ -12,6 +12,11 @@ public class Circle extends Point {
 
     public void setRadius(int radius) {
         this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
     }
 
     @Override

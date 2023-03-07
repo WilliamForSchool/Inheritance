@@ -1,27 +1,23 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        Point p = new Point(10, 13);
-        System.out.println(p);
-        Point p2 = new Point(34, 40);
-        System.out.println(p.distanceTo(p2));
-        System.out.println(p2.distanceTo(p));
-        System.out.println();
-        System.out.println();
+        ArrayList<Point> shapes = new ArrayList<>();
+        shapes.add(new Circle(2, 6, 16));
+        shapes.add(new Point(14, 6));
+        shapes.add(new Circle(19, 5, 7));
+        shapes.add(new Point(2, 7));
+        shapes.add(new Point(5, 18));
+        shapes.add(new Circle(4, 19, 9));
+        shapes.add(new Point(9, 1));
+        shapes.add(new Circle(6, 10, 7));
+        shapes.add(new Sphere(7, 1, 6));
+        shapes.add(new Sphere(8, 9, 1));
 
-
-        Circle circ = new Circle(10, 13, 10);
-        System.out.print(circ);
-        System.out.println();
-        System.out.println();
-
-
-        Object o1 = new Point(4, 5);
-        Object o2 = new Circle(6, 7, 3);
-        Object o3 = new HashMap<>();
-        Point p3 = new Circle(4, 5, 9);
-        System.out.println(p3);
+        for(Point p: shapes) {
+            System.out.println(p.getArea());
+        }
 
 
     }
